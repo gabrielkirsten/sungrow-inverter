@@ -1,5 +1,11 @@
 # Sungrow Inverter Integration for Home Assistant
 
+[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/hacs/integration)
+[![GitHub release](https://img.shields.io/github/release/gabrielkirsten/sungrow-inverter.svg)](https://GitHub.com/gabrielkirsten/sungrow-inverter/releases/)
+[![Documentation](https://img.shields.io/badge/Documentation-2D963D?logo=read-the-docs&logoColor=white)](https://github.com/gabrielkirsten/sungrow-inverter/wiki)
+[![License](https://img.shields.io/github/license/gabrielkirsten/sungrow-inverter)](https://github.com/gabrielkirsten/sungrow-inverter/blob/main/LICENSE)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/gabrielkirsten/sungrow-inverter/graphs/commit-activity)
+
 This integration allows you to monitor your Sungrow inverter through Home Assistant using the Modbus protocol.
 
 ## Features

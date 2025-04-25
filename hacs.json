@@ -4,6 +4,5 @@
   "homeassistant": "2024.1.0",
   "hacs": "1.6.0",
   "zip_release": true,
-  "filename": "sungrow_inverter.zip",
-  "category": "integration"
+  "filename": "sungrow_inverter.zip"
 } 

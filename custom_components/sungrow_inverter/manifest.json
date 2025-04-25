@@ -1,11 +1,11 @@
 {
-  "domain": "sungrow_inverter",
-  "name": "Sungrow Inverter",
-  "documentation": "https://github.com/gabrielkirsten/sungrow-inverter",
-  "issue_tracker": "https://github.com/gabrielkirsten/sungrow-inverter/issues",
-  "dependencies": [],
   "codeowners": ["@gabrielkirsten"],
-  "requirements": ["requests>=2.25.0"],
+  "dependencies": [],
+  "documentation": "https://github.com/gabrielkirsten/sungrow-inverter",
+  "domain": "sungrow_inverter",
   "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/gabrielkirsten/sungrow-inverter/issues",
+  "name": "Sungrow Inverter",
+  "requirements": ["requests>=2.25.0"],
   "version": "1.0.0-beta"
 } 
