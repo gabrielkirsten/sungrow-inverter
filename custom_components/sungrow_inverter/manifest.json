@@ -1,0 +1,11 @@
+{
+  "domain": "sungrow_inverter",
+  "name": "Sungrow Inverter",
+  "documentation": "https://github.com/gabrielkirsten/sungrow-inverter",
+  "requirements": ["pymodbus>=3.0.0"],
+  "dependencies": [],
+  "codeowners": ["@gabrielkirsten"],
+  "version": "0.1.0",
+  "config_flow": true,
+  "iot_class": "local_polling"
+} 

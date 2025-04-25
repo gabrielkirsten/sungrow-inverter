@@ -1,0 +1,22 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Onduleur Sungrow",
+                "description": "Configurez la connexion de votre onduleur Sungrow",
+                "data": {
+                    "type": "Type de Connexion",
+                    "host": "Adresse IP/Hôte ou Port Série",
+                    "port": "Port",
+                    "slave_id": "ID de l'Esclave"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "Échec de la connexion à l'onduleur. Veuillez vérifier vos paramètres et réessayer."
+        },
+        "abort": {
+            "already_configured": "Cet onduleur est déjà configuré"
+        }
+    }
+} 

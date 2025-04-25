@@ -1,0 +1,22 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Sungrow Wechselrichter",
+                "description": "Konfigurieren Sie die Verbindung zu Ihrem Sungrow Wechselrichter",
+                "data": {
+                    "type": "Verbindungstyp",
+                    "host": "IP-Adresse/Host oder serieller Port",
+                    "port": "Port",
+                    "slave_id": "Slave-ID"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "Verbindung zum Wechselrichter fehlgeschlagen. Bitte überprüfen Sie Ihre Einstellungen und versuchen Sie es erneut."
+        },
+        "abort": {
+            "already_configured": "Dieser Wechselrichter ist bereits konfiguriert"
+        }
+    }
+} 

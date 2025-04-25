@@ -1,0 +1,22 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Sungrow Inverter",
+                "description": "Configure your Sungrow Inverter connection",
+                "data": {
+                    "type": "Connection Type",
+                    "host": "Host/IP Address or Serial Port",
+                    "port": "Port",
+                    "slave_id": "Slave ID"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "Failed to connect to the inverter. Please check your settings and try again."
+        },
+        "abort": {
+            "already_configured": "This inverter is already configured"
+        }
+    }
+} 

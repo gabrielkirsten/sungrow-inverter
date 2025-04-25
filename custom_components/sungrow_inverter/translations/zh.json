@@ -1,0 +1,22 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "阳光电源逆变器",
+                "description": "配置您的阳光电源逆变器连接",
+                "data": {
+                    "type": "连接类型",
+                    "host": "IP地址/主机或串口",
+                    "port": "端口",
+                    "slave_id": "从站ID"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "连接逆变器失败。请检查您的设置并重试。"
+        },
+        "abort": {
+            "already_configured": "此逆变器已配置"
+        }
+    }
+} 

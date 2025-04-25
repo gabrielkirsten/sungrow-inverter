@@ -1,0 +1,22 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Inversor Sungrow",
+                "description": "Configure la conexión de su inversor Sungrow",
+                "data": {
+                    "type": "Tipo de Conexión",
+                    "host": "Dirección IP/Host o Puerto Serial",
+                    "port": "Puerto",
+                    "slave_id": "ID del Esclavo"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "Error al conectar con el inversor. Por favor, verifique su configuración e intente nuevamente."
+        },
+        "abort": {
+            "already_configured": "Este inversor ya está configurado"
+        }
+    }
+} 
