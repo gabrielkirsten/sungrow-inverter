@@ -1,59 +1,72 @@
-# Home Assistant Sungrow Inverter Integration
+# Sungrow Inverter Integration for Home Assistant
 
-This integration allows you to monitor and control your Sungrow solar inverter through Home Assistant using Modbus TCP/RTU protocol.
+This integration allows you to monitor your Sungrow inverter through Home Assistant using the Modbus protocol.
 
 ## Features
 
-- Real-time monitoring of solar production
-- Battery status monitoring (if applicable)
-- Grid connection status
-- Power generation statistics
-- System status and alarms
-
-## Supported Devices
-
-- Sungrow Inverters with Modbus TCP/RTU support
+- Real-time monitoring of inverter data
+- Support for multiple sensor types including:
+  - Active Power (W)
+  - Reactive Power (var)
+  - Apparent Power (VA)
+  - Power Factor
+  - Grid Voltage (V)
+  - Grid Current (A)
+  - Grid Frequency (Hz)
+  - DC Voltage (V)
+  - DC Current (A)
+  - DC Power (W)
+  - Temperature (°C)
+  - Efficiency (%)
+  - Daily Energy (kWh)
+  - Total Energy (kWh)
+- Easy configuration through the Home Assistant UI
 
 ## Installation
 
-1. Copy the `sungrow_inverter` folder to your Home Assistant's `custom_components` directory
-2. Restart Home Assistant
-3. Add the integration through the Home Assistant UI
+1. Copy the contents of this repository to your Home Assistant's `config/custom_components/sungrow_inverter` directory:
+   ```bash
+   mkdir -p config/custom_components/sungrow_inverter
+   cp -r custom_components/sungrow_inverter/* config/custom_components/sungrow_inverter/
+   ```
+2. Restart Home Assistant.
+3. Add the integration through the Home Assistant UI.
 
 ## Configuration
 
 The integration can be configured through the Home Assistant UI:
 
-1. Go to Configuration > Integrations
-2. Click on "+ Add Integration"
+1. Go to **Configuration** > **Integrations**
+2. Click on **+ Add Integration**
 3. Search for "Sungrow Inverter"
-4. Enter the required connection details:
-   - Host/IP address (for TCP) or Serial port (for RTU)
-   - Port (default: 502 for TCP)
-   - Slave ID (default: 1)
-   - Connection type (TCP/RTU)
+4. Enter the following details:
+   - Host/IP address of your inverter
+   - Username (if required)
+   - Password (if required)
+5. Click **Submit**
 
-## Modbus Registers
+## Supported Devices
 
-The integration uses the following Modbus registers (based on the official documentation):
-
-- Total power yield (register 5004)
-- Total running time (register 5006)
-- Internal temperature (register 5008)
-- DC voltage and current (registers 5011-5016)
-- Grid voltage and current (registers 5019-5024)
-- Active power (register 5031)
-- Grid frequency (register 5036)
-- Work state (register 5038)
+This integration has been tested with the following Sungrow inverter models:
+- SH5K-20
+- SH3.6K
+- SH4.6K
+- SH5.0K
+- SH6.0K
 
 ## Troubleshooting
 
 If you encounter any issues:
 
-1. Check your network connection to the inverter
-2. Verify the Modbus settings in your inverter
-3. Check the Home Assistant logs for any error messages
-4. Ensure the correct slave ID is configured
+1. Check that your inverter is connected to your network
+2. Verify that the IP address is correct
+3. Ensure your inverter supports Modbus TCP protocol
+4. Check the Home Assistant logs for any error messages
+5. Verify that the port (default: 8080) is accessible
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 

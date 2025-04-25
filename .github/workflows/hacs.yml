@@ -23,4 +23,4 @@ jobs:
           pip install hacs
       - name: Validate HACS
         run: |
-          hacs validate --action validate 
+          python -m hacs validate 
